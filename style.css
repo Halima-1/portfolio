@@ -1,0 +1,630 @@
+*{
+    padding: none;
+    box-sizing: border-box;
+    margin: 0;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    width: 100%;
+    background-color: rgb(30, 51, 71);
+    padding: 10px;
+    text-align: center;
+}
+.hidden{
+    display: block;
+}
+.hide{
+    display: none;
+}
+.showing{
+    display: block;
+}
+.drawer{
+    display: none;
+    width:50px;
+}
+/* .drawer span{
+    width: 15px;
+    height: 2px;
+    margin:5px auto ;
+    display: none;
+    font-family: Arial, Helvetica, sans-serif
+} */
+nav h2{
+    font-size: 20px;
+    margin: auto;
+    background-color: rgb(30, 51, 71);
+    text-transform: capitalize;
+    color: white;
+}
+main{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+aside{
+    width: 15%;
+    display: block;
+    padding: 20px;
+}
+.side-navbar div{
+    width: 80%; 
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px 0;
+}
+/* .side-navbar div:hover{
+    background-color: rgb(141, 136, 136);
+} */
+.side-navbar>div :nth-child(1){
+    width: 20px;
+    height: 20px;
+    color: white;
+
+}
+/* .side-navbar>div :nth-child(1):hover,:nth-child(2):hover{
+    background-color: rgb(100, 88, 88);
+} */
+.side-navbar div :nth-child(2){
+    font-size: 14px;
+    width: 70%;
+    margin-top: 3PX;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: white;
+}
+.side-navbar div :nth-child(2):visited{
+    color: red;
+}
+.side-navbar div :nth-child(2):active{
+    color: green;
+}
+.container{
+    width: 85%;
+    display: block;
+}
+.welcome-img{
+    width: 98%;
+    background-image: url(./images/f2.jpg);
+    height: 200px;
+    /* margin-right: 20px; */
+}
+.container :nth-child(2){
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.my-pic{
+    width: 240px;
+    position: relative;
+    bottom: 50px;
+    border-radius: 100%;
+}
+.my-pic img{
+    width: 100%;
+    border-radius: 100%;
+    border: 2px solid white;
+    height: 160px;
+    object-fit: cover;
+}
+#name{
+    display: block;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+#name h2{
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    color: white;
+}
+#name p{
+    font-size: 12px;
+    text-transform: capitalize;
+    color: white;
+}
+#resume{
+    padding: 12px;
+    margin-top: 30px;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    height: fit-content;
+    margin-right: 20px;
+    
+}
+#resume a{
+    background-color: aqua;
+    color: black;
+    font-size: 14px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+#resume svg{
+    width: 17px;
+    height: 17px;
+    background-color: aqua;
+    color: black;
+}
+#about {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+#about h2,h3{
+    color: white;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+#about div{
+    width: 47%;
+    margin-top: 20px;
+    display: block;
+}
+#about div > p{
+    color: white;
+    line-height: 24px;
+}
+#about div > button{
+    width: fit-content;
+    border: none;
+    padding: 7px 3px;
+    color: rgb(247, 247, 253);
+    text-decoration: underline;
+    font-size: 18px;
+    margin-top: 0px;
+
+}
+#about :nth-child(2) > p{
+    margin-top: 15px;
+    color: blue;
+}
+.more{
+    width: 100%;
+    margin-top: 20px;
+    
+}
+.more p{
+    width: 100%;
+    color: white;
+    line-height: 25px;
+    font-size: 15px;
+}
+.more button{
+    width: fit-content;
+    border: none;
+    padding: 7px 3px;
+    color: rgb(253, 253, 255);
+    text-decoration: underline;
+    font-size: 18px; 
+}
+.more-skill p{
+width: 100%;
+margin-top: 14px;
+font-size: 15px;
+color: rgb(242, 242, 245);
+
+}
+
+.project{
+    display: block;
+    /* width: 50%; */
+    color: white;
+    /* background-color: aqua; */
+}
+.project h2{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+#projOne{
+    width: 30%;
+    color: white;
+    display: block;
+    margin-bottom: 20px;
+    margin: auto;
+}
+#projOne img{
+    width: 80%;
+    height: 180px;
+    object-fit: fill;
+    margin-bottom: 20px;
+}
+.more-project{
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+#project-container1 {
+    width: 33%;
+    display: block;
+}
+#project-container1 p {
+    width: 80%;
+    font-size: 15px;
+}
+#project-container2 {
+    width: 33%;
+    display: block;
+}
+#project-container2 p {
+    width: 80%;
+    font-size: 15px;
+}
+#project-container3 {
+    width: 33%;
+    display: block;
+}
+#project-container3 p {
+    width: 80%;
+    font-size: 15px;
+}
+#btn2{
+    width: fit-content;
+    border: none;
+    padding: 7px 3px;
+    color: blue;
+    text-decoration: underline;
+    font-size: 18px;
+    margin-top: 0px;
+    margin: auto;
+}
+.more-img{
+    width: 80%;
+    height: 180px;
+    object-fit: fill;
+    margin-bottom: 20px;
+}
+
+@media(max-width:500px){
+    *{
+        padding: none;
+        box-sizing: border-box;
+        margin: 0;
+        background-color: black;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .hidden{
+        display: none;
+
+    }
+    .drawer{
+        display: block;
+        background-color: rgb(30, 51, 71);
+    }
+    .toggleOne{
+        margin:2px auto ;
+        background-color: white;
+        height: 2px;
+        width: 20px;
+        display: block;
+    }
+    .toggleTwo{
+        margin:2px auto ;
+        background-color: white;
+        height: 2px;
+        width: 10px;
+        margin-left: 15px;
+        display: block;
+    }
+    .showing{
+        display: block;
+    }
+    /* #sideNav{
+        padding: 10px 20px;
+        position: absolute;
+        top: 40px;
+        width: fit-content;
+        z-index: 1;
+    } */
+    nav{
+        width: 100%;
+        background-color: rgb(30, 51, 71);
+        padding: 10px;
+        text-align: center;
+    }
+    nav h2{
+        font-size: 20px;
+        margin: auto;
+        background-color: rgb(30, 51, 71);
+        text-transform: capitalize;
+        color: white;
+        display: none;
+    }
+    main{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+    aside{
+        width: 30%;
+        display: block;
+        padding: 6px;
+    }
+    .side-navbar{
+        width: 100%;
+    }
+    .side-navbar div{
+        width: 100%; 
+        display: flex;
+        gap: 5px;
+        justify-content: space-between;
+        padding: 0px;
+        margin: 20px 0;
+    }
+    .side-navbar>div :nth-child(1){
+        width: 15px;
+        height: 15px;
+        color: white;
+    }
+    
+    .side-navbar div :nth-child(2){
+        font-size: 9px;
+        width: 50px;
+        margin-top: 3px;
+        text-transform: capitalize;
+        text-decoration: none;
+        color: white;
+    }
+    .side-navbar div :nth-child(2):visited{
+        color: red;
+    }
+    .side-navbar div :nth-child(2):active{
+        color: green;
+    }
+    .container{
+        width: 100%;
+        display: block;
+    }
+    .welcome-img{
+        width: 100%;
+        background-image: url(./images/f2.jpg);
+        height: 120px;
+        margin: 0;
+        /* margin-right: 20px; */
+    }
+    .container :nth-child(2){
+        width: 100%;
+        display: flex;
+        padding: 0 5px ;
+        justify-content: space-between;
+    }
+    .my-pic{
+        width: fit-content;
+        position: relative;
+        bottom: 30px;
+        border-radius: 100%;
+    }
+    .my-pic img{
+        width: 120px;
+        border-radius: 100%;
+        border: 2px solid white;
+        height: 120px;
+        object-fit: cover;
+    }
+    #name{
+        display: block;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    #name h2{
+        font-size: 10px;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+        color: white;
+    }
+    #name p{
+        font-size: 9px;
+        text-transform: capitalize;
+        color: white;
+        margin-left: -5px;
+
+    }
+    #resume{
+        padding:3px 2px;
+        margin-top: 20px;
+        width: 220px;
+        display: flex;
+        gap: 5px;
+        justify-content: space-around;
+        background-color: aqua;
+        height: fit-content;
+        margin-right: 0px;
+        /* position: absolute;
+        right: 70px;
+        top: 40px; */
+        
+    }
+    #resume a{
+        background-color: aqua;
+        color: blue;
+        font-size: 10px;
+        text-transform: capitalize;
+        text-decoration: none;
+        width: fit-content;
+    }
+    #resume svg{
+        width: 12px;
+        height: 12px;
+        background-color: aqua;
+        color: blue;
+        padding: 0;
+    }
+    #about {
+        width: 100%;
+        display: block;
+        gap: 40px;
+    }
+    #about h3,h2{
+        color: white;
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+    #about div{
+        width: 90%;
+        margin-top: 20px;
+        display: block;
+        margin: auto;
+        margin-bottom: 0;
+    }
+    #about div > button{
+        width: fit-content;
+        border: none;
+        padding: 7px 3px;
+        color: rgb(247, 247, 253);
+        text-decoration: underline;
+        font-size: 10px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+
+    }
+    #about div > p{
+        color: white;
+        line-height: 24px;
+        font-size: 10px;
+        margin-bottom: 0px;
+    }
+    #skill{
+        display: block;
+        width: 90%;
+    }
+    #skill p{
+        margin-top: 0px;
+        color: blue;
+
+    }
+    .more{
+        width: 90%;
+        margin-top: 20px;
+        margin: auto;
+        margin-bottom: 15px;
+        
+    }
+    .more p{
+        width: 100%;
+        color: white;
+        line-height: 24px;
+        font-size: 10px;
+        margin-left: 7px;
+        margin-bottom: 15px;
+    }
+    .more button{
+        width: fit-content;
+        border: none;
+        padding: 7px 3px;
+        color: rgb(253, 253, 255);
+        text-decoration: underline;
+        font-size: 10px; 
+        margin-left: 12px;
+
+    }
+    .more-skill{
+        margin-left: -20px;
+        width: 100%;
+    }
+    .more-skill h2{
+        font-size: 15px;
+        margin-left: -10px;
+
+
+    }
+    .more-skill p{
+    width: 100%;
+    margin-top: 14px;
+    font-size: 12px;
+    color: rgb(242, 242, 245);
+    width: 100%;
+    margin-left: -10px;
+    text-align: left;
+    }
+    #projects{
+        display: block;
+        width: 95%;
+        color: white;
+        margin-top: 20px;
+        margin: auto;
+    }
+    #projects h2{
+        font-size: 15px;
+        margin-bottom: 25px;
+        margin-left: 15px;
+
+    }
+    #projOne{
+        width: 80%;
+        color: white;
+        display: block;
+        margin-bottom: 20px;
+        margin: auto;
+    }
+    #projOne img{
+        width: 90%;
+        height: 180px;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+    #projOne p{
+        font-size: 10px;
+        width: 100%;
+        line-height: 20px;
+
+    }
+    .more-project{
+        width: 100%;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        margin: auto;
+    }
+    #project-container1 {
+        width: 33.3%;
+        display: block;
+    }
+    #project-container1 p {
+        width: 90%;
+        font-size: 10px;
+    }
+    #project-container2 {
+        width: 33.3%;
+        display: block;
+    }
+    #project-container2 p {
+        width: 90%;
+        font-size: 10px;
+    }
+    #project-container3 {
+        width: 33.3%;
+        display: block;
+    }
+    #project-container3 p {
+        width: 90%;
+        font-size: 10px;
+    }
+    #btn2{
+        width: fit-content;
+        border: none;
+        padding: 7px 3px;
+        color: blue;
+        text-decoration: underline;
+        font-size: 10px;
+        margin-top: 0px;
+        margin: auto;
+    }
+    .more-img{
+        width: 80%;
+        height: 150px;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+    .more{
+            width: 100%;
+    
+    }
+    
+}
